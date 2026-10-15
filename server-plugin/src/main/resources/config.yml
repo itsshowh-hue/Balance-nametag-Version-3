@@ -1,0 +1,2 @@
+# How often (ticks, 20 = 1 second) balances are checked. Only changes are sent.
+interval-ticks: 100

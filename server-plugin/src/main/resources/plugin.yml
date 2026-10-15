@@ -1,0 +1,13 @@
+name: BalanceNametagServer
+version: '${version}'
+main: com.example.balancenametagserver.BalanceNametagServer
+api-version: '1.21'
+depend: [Vault]
+description: Sends player balances (from Vault) to clients that run the Balance Nametag mod.
+permissions:
+  balancenametag.receive:
+    description: Receive other players' balances (shown by the client mod).
+    default: true
+  balancenametag.hide:
+    description: Your balance is never sent to anyone.
+    default: false

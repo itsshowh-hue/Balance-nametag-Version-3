@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "balancenametag",
+  "version": "${version}",
+  "name": "Balance Nametag",
+  "description": "Shows a player's economy balance under their nametag, using only data the server legitimately sends to the client.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.balancenametag.BalanceNametagClient"]
+  },
+  "mixins": ["balancenametag.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
